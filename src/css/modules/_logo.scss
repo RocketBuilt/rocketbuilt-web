@@ -1,0 +1,25 @@
+.logo {
+  $brand-width: 439px;
+  $brand-height: 153px;
+  $brand-ratio: $brand-height/$brand-width;
+
+  $brand-logo-size: 150px;
+
+  margin: 0;
+  overflow: hidden;
+
+  @include modifier("sm") {
+    width: $brand-logo-size;
+    height: $brand-logo-size*$brand-ratio;
+  }
+
+  @include component("image") {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/logo/rocketbuilt_logo.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}

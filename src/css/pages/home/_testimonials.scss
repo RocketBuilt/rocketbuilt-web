@@ -1,0 +1,20 @@
+.testimonials {
+	padding-top: calculateRem(40px);
+	background: darken($brand-light-blue, 8%);
+	min-height: 450px;
+
+	@include component('wrapper') {
+		margin-top: calculateRem(25px);
+		@include row;
+	}
+
+	@include component('holder') {
+		@include span-columns(4);
+	}
+
+	@include component('testimonial') {
+		padding: 20px;
+		background: white;
+		border-radius: 15px;
+	}
+}

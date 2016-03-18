@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "grid-settings";
 @import "../bower_components/neat/app/assets/stylesheets/neat";
 
 @import "variables";
@@ -14,5 +15,16 @@
 @import "general";
 @import "utils";
 
-body {
-}
+@import "modules/logo";
+@import "modules/button";
+@import "modules/brand-heading-group";
+@import "modules/heading";
+// @import "modules/";
+
+
+@import "partials/header";
+// @import "partials/"
+// @import "partials/"
+
+@import "pages/home/landing";
+@import "pages/home/testimonials";

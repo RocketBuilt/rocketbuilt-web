@@ -1,0 +1,20 @@
+@mixin component($name) {
+  &--#{$name} {
+    @content;
+  }
+}
+
+@mixin modifier($name) {
+  &__#{$name} {
+    @content;
+  }
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+@mixin font-family($primary: $default-font-family, $secondary: Helvetica Neue) {
+  font-family: $primary, $secondary, sans-serif;
+}

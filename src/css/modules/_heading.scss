@@ -1,0 +1,19 @@
+.heading {
+	@include modifier('sm') 	{ @include font-size(18px) }
+	@include modifier('md') 	{ @include font-size(24px) }
+	@include modifier('lg') 	{ @include font-size(30px) }
+	@include modifier('xlg') 	{ @include font-size(36px) }
+
+	@include modifier('thin') 	{ font-weight: $font-weight-1 }
+	@include modifier('normal') { font-weight: $font-weight-2 }
+	@include modifier('bolder') { font-weight: $font-weight-3 }
+	@include modifier('bold') 	{ font-weight: $font-weight-4 }
+
+	@include modifier('blue') 			{ color: $brand-normal-blue }
+	@include modifier('light-blue') { color: $brand-light-blue }
+	@include modifier('orange') 		{ color: $brand-normal-orange }
+
+	@include modifier('upcase') { text-transform: uppercase }
+
+	letter-spacing: 0.5px;
+}

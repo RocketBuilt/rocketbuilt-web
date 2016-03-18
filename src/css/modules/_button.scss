@@ -1,0 +1,21 @@
+.button {
+	border-radius: 999em;
+	text-decoration: none;
+
+	@include modifier('sm') {
+		@include font-size(14px);
+		padding: 10px 20px;
+	}
+
+	@include modifier('orange-filled') {
+		color: $white;
+		background: $brand-normal-orange;
+		border: 1px solid shade($brand-normal-orange, 10%);
+
+		box-shadow: 0 0 3px rgba($brand-dark-blue, 0.5);
+	}
+
+	@include modifier('orange-transparent') {
+
+	}
+}

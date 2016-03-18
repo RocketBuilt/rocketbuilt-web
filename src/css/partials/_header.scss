@@ -1,0 +1,32 @@
+.header {
+	height: 60px;
+
+	@include component('wrapper') {
+		position: relative;
+	}
+
+	@include component('logo-wrapper') {
+		position: absolute;
+		top: 5px;
+		left: 0;
+	}
+
+	@include component('pages') {
+		position: absolute;
+		right: 0;
+		top: 25px;
+
+		@include component('item') {
+			display: inline-block;
+		}
+
+		@include component('link') {
+			padding: 12px;
+			@include font-size(13px);
+			letter-spacing: 0.5px;
+			text-decoration: none;
+			color: $brand-normal-blue;
+			font-weight: $font-weight-2;
+		}
+	}
+}
