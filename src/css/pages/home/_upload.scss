@@ -1,0 +1,7 @@
+.page-index {
+	.upload {
+		min-height: 500px;
+		padding-top: calculateRem(50px);
+	  background: linear-gradient(to right, $gradient-blue-lighter, $gradient-blue-darker);
+	}
+}

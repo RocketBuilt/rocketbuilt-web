@@ -23,8 +23,12 @@
 
 
 @import "partials/header";
-// @import "partials/"
+@import "partials/footer";
 // @import "partials/"
 
 @import "pages/home/landing";
 @import "pages/home/testimonials";
+@import "pages/home/flow";
+@import "pages/home/upload";
+
+@import "pages/upload/landing";

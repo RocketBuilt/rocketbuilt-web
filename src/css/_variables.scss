@@ -3,6 +3,14 @@ $brand-normal-blue: #2963A5;
 $brand-lighter-blue: #B7D2EE;
 $brand-light-blue: #EDF4FB;
 
+$background-very-light-blue: #effaff;
+$background-light-blue: #d7f0fc;
+
+$text-very-light-blue: #efeeff;
+
+$gradient-blue-lighter: #3498db;
+$gradient-blue-darker: #2963a5;
+
 $brand-normal-orange: #D86643;
 $brand-light-orange: #EB9C3D;
 
@@ -10,6 +18,8 @@ $white: rgb(255, 255, 255);
 $black: rgb(0, 0, 0);
 
 $lighter-grey: #969696;
+$light-grey: tint($lighter-grey, 30%);
+$text-grey: shade($lighter-grey, 20%);
 
 $default-font-family: 'proxima-nova-soft';
 

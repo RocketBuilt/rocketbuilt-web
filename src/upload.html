@@ -32,11 +32,11 @@
         grunticon( [ "images/svg-build/icons.data.svg.css", "images/svg-build/icons.data.png.css", "images/svg-build/icons.fallback.css" ] );</script>
         <noscript><link rel="stylesheet" href="images/svg-build/icons.fallback.css"></noscript>
     </head>
-    <body class="page-index">
+    <body class="page-upload">
         
 
 <section class="landing">
-  <header class="header">
+	<header class="header">
 	<div class="header--wrapper container">
 		<div class="header--logo-wrapper">
 			<h1 class="logo logo__sm">
@@ -71,51 +71,29 @@
 	</div>
 </header>
 
-  
-	<div class="container">
-		<div class="brand-heading-group align-center">
-			<h1 class="brand-heading-group--main">Turn your pages into CMS automatically!</h1>
-			<h2 class="brand-heading-group--sub">
-				Just upload your assets, select editable parts and download
-				your new CMS
-			</h2>
-		</div>
-	</div>
-</section>
+	<h1 class="align-center landing--heading brand-heading-group--main">Get fucking started now!</h1>
 
-<section class="testimonials">
 	<div class="container">
-		<h2 class="heading heading__sm heading__bolder heading__orange heading__upcase align-center">
-			What 'em bitches say about us
-		</h2>
-
-		<div class="testimonials--wrapper">
-			<div class="testimonials--holder">
-				<div class="testimonials--testimonial">
-					One
+		<div class="landing--grid">
+			<div class="landing--grid--left">
+				<div id="drag-drop" class="landing--drag-drop align-center">
+					<div class="landing--content-holder">
+						<h4 class="landing--drag-drop--heading">Drag & Drop you static website directory here</h4>
+						<a href="#" class="button button__lg button__blue-filled table-center">Browse directory</a>
+						<p class="landing--drag-drop--subtitle">or <a href="#">use our sample website</a></p>
+					</div>
 				</div>
 			</div>
-
-			<div class="testimonials--holder">
-				<div class="testimonials--testimonial">
-					RocketBuilt finally solved all of the pain with implementing CMS. Because now you don’t have implement anything.
-				</div>
-			</div>
-
-			<div class="testimonials--holder">
-				<div class="testimonials--testimonial">
-					Three
+			<div class="landing--grid--right">
+				<div class="landing--description">
+					<div class="landing--content-holder">
+						<h1 class="landing--description--heading">It's free.</h1>
+						<h1 class="landing--description--heading">And always will be*</h1>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</section>
-
-<section class="flow">
-</section>
-
-<section class="upload">
-	<h1 class="align-center brand-heading-group--main brand-heading-group--main__white">Get ready to deploy CMS on output</h1>
 </section>
         <footer class="footer">
 	<div class="container">
@@ -217,6 +195,8 @@
         <script src="js/plugins.js"></script>
         <!-- endbuild -->
         
+        
+        <script src="js/drag-drop.js"></script>
         
     </body>
 </html>

@@ -12,10 +12,20 @@
 		background: $brand-normal-orange;
 		border: 1px solid shade($brand-normal-orange, 10%);
 
-		box-shadow: 0 0 3px rgba($brand-dark-blue, 0.5);
+		// box-shadow: 0 0 3px rgba($brand-dark-blue, 0.5);
 	}
 
 	@include modifier('orange-transparent') {
 
+	}
+
+	@include modifier('lg') {
+		@include font-size(14px);
+		padding: 20px 40px;
+	}
+
+	@include modifier('blue-filled') {
+		color: $white;
+		background: lighten($brand-normal-blue, 10%);
 	}
 }

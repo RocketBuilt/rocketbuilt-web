@@ -1,20 +1,23 @@
-.testimonials {
-	padding-top: calculateRem(40px);
-	background: darken($brand-light-blue, 8%);
-	min-height: 450px;
+.page-index {
+	.testimonials {
+		padding-top: calculateRem(40px);
+		background: $background-light-blue;
+		min-height: 300px;
 
-	@include component('wrapper') {
-		margin-top: calculateRem(25px);
-		@include row;
-	}
+		@include component('wrapper') {
+			margin-top: calculateRem(25px);
+			@include row;
+		}
 
-	@include component('holder') {
-		@include span-columns(4);
-	}
+		@include component('holder') {
+			@include span-columns(4);
+		}
 
-	@include component('testimonial') {
-		padding: 20px;
-		background: white;
-		border-radius: 15px;
+		@include component('testimonial') {
+			display: none;
+			padding: 20px;
+			background: white;
+			border-radius: 15px;
+		}
 	}
 }

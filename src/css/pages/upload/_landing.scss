@@ -1,0 +1,73 @@
+.page-upload {
+	.landing {
+		padding-bottom: calculateRem(70px);
+		
+		@include component('heading') {
+			padding-top: calculateRem(50px);
+		}
+
+		@include component('grid') {
+			@include row;
+			margin-top: calculateRem(55px);
+
+			@include component('left') {
+				@include span-columns(6);
+			}
+
+			@include component('right') {
+				@include span-columns(6);
+			}
+		}
+
+		@include component('content-holder') {
+			position: absolute;
+			width: 100%;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		
+		@include component('drag-drop') {
+			position: relative;
+			height: calculateRem(360px);
+			width: 100%;
+			border: 3px dashed $brand-normal-blue;
+			border-radius: 15px;
+			background: lighten($brand-light-blue, 2%);
+
+			@include component('heading') {
+				color: lighten($brand-normal-blue, 10%);
+				font-weight: $font-weight-3;
+				margin-bottom: calculateRem(20px);
+			}
+
+			@include component('subtitle') {
+				@include font-size(14px);
+				margin-top: calculateRem(20px);
+				color: $text-grey;
+				font-weight: $font-weight-3;
+
+				a {
+					color: inherit;
+					text-decoration: none;
+					border-bottom: 1px solid tint($lighter-grey, 50%);
+				}
+			}
+		}
+
+		@include component('description') {
+			position: relative;
+			height: calculateRem(360px);
+			width: 100%;
+			margin-left: calculateRem(50px);
+
+			@include component('heading') {
+				@include font-size(38px);
+				font-weight: $font-weight-1;
+				letter-spacing: 1px;
+				margin-bottom: calculateRem(10px);
+				color: $light-grey;
+			}
+		}
+	}
+}

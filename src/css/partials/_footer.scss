@@ -1,0 +1,15 @@
+.footer {
+	padding-top: calculateRem(50px);
+	min-height: 200px;
+	background: $brand-dark-blue;
+
+	@include component('column') {
+		@include span-columns(2.4);
+	}
+
+	@include component('heading') {
+		font-weight: $font-weight-2;
+		color: $white;
+		margin-bottom: calculateRem(15px);
+	}
+}
